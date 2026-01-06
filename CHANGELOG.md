@@ -6,6 +6,40 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [Unreleased] - 2025
+
+### Cleanup Phase - Unused Files Removed
+**Date**: January 6, 2025
+
+#### Removed
+- `test.txt` - Test file
+- `images/Thumbs.db` - Windows thumbnail cache
+- `css/960.css.bak` - Backup file
+- `css/uncompressed/` - Backup directory
+- `style.css` (root level) - Unused, site uses `css/style.css`
+- `background.png` (root level) - Unused, site uses `images/background.png`
+- `galleria-1.2.9.js` - Unused, site uses `jquery.galleria.js`
+- `galleria-1.2.9.min.js` - Unused
+- `jquery-1.9.1.min.js` - Unused, site uses `jquery-1.2.6.min.js`
+- `jquery.corner.js` - Unused, site uses `jquery.curvycorners.min.js`
+- `jquery.galleria.pack.js` - Unused
+- `css/galleria.classic.css` - Unused
+- `images/1b.jpg` - Not in gallery
+- `images/1c.jpg` - Not in gallery
+- `images/old/` - Backup directory with old images
+- `index.php` - Broken test file with incorrect references and placeholder content
+
+#### Added
+- `index.html.backup` - Backup of current index.html before cleanup
+- `CLEANUP_PLAN.md` - Documentation of cleanup process
+
+#### Notes
+- `index.php` deleted - Confirmed unused: references non-existent `jquery-1.3.min.js`, has placeholder content, duplicate head tags, and broken paths
+- Site functionality should be unchanged - all deleted files were unused
+- **User testing required** to confirm site still works correctly
+
+---
+
 ## [Unreleased] - 2024
 
 ### Project Initiation - Modernization & Responsive Design

@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-CJP2HX87N2"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-CJP2HX87N2');
+        </script>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="canonical" href="https://moodybeachmaine.com/" />
+		<link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="css/text.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="css/960.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+		<link href="css/galleria.css" rel="stylesheet" type="text/css" media="screen" />
+		<script type="text/javascript" src="jquery-1.2.6.min.js"></script>
+		<script type="text/javascript" src="jquery.galleria.js"></script>
+		<script type="text/javascript" src="jquery.curvycorners.min.js"></script>
+		<script type="text/javascript" src="jquery.plugin.dropshadow.js"></script>
+		<script type="text/javascript">
+
+			$(function($) {
+				$('ul.gallery').galleria({
+					history   : true, // activates the history object for bookmarking, back-button etc.
+					clickNext : true, // helper for making the image clickable
+					insert    : '#main_image', // the containing selector for our main image
+					onImage   : function(image,caption,thumb) { // let's add some image effects for demonstration purposes
+						// fade in the image & caption
+						if(! ($.browser.mozilla && navigator.appVersion.indexOf("Win")!=-1) ) { // FF/Win fades large images terribly slow
+							image.css('display','none').fadeIn(1000);
+						}
+						caption.css('display','none').fadeIn(600);
+						// fetch the thumbnail container
+						var _li = thumb.parents('li');
+
+						// fade out inactive thumbnail
+						_li.siblings().children('img.selected').fadeTo(500,0.3);
+
+						// fade in active thumbnail
+						thumb.fadeTo('fast',1).addClass('selected');
+
+						// add a title for the clickable image
+						image.attr('title','Next image >>');
+					},
+					onThumb : function(thumb) { // thumbnail effects goes here
+						// fetch the thumbnail container
+						var _li = thumb.parents('li');
+						// if thumbnail is active, fade all the way.
+						var _fadeTo = _li.is('.active') ? '1' : '0.3';
+						// fade in the thumbnail when finnished loading
+						thumb.css({display:'none',opacity:_fadeTo}).fadeIn(1000);
+						// hover effects
+						thumb.hover(
+							function() { thumb.fadeTo('fast',1); },
+							function() { _li.not('.active').children('img').fadeTo('fast',0.3); } // don't fade out if the parent is active
+						)
+					}
+				});
+			});
+		</script>
+		<style media="screen,projection" type="text/css">
+			/* BEGIN DEMO STYLE */
+			.gallery li{width:80px;height:60px;border:3px double #111;margin: 0 2px;background:#000; float:left;}
+			.gallery {width:300px;}
+	  </style>
+		<title>Moody Beach Maine</title>
+		<meta name="description" content="Canonicus Moody Beach Maine" />
+		<meta name="keywords" content="Moody Beach Maine, Canonicus, Moody Beach, Wells Maine, Moody Beach Rental, Summer Rental" />
+		<!--
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-40545865-1', 'moodybeachmaine.com');
+			ga('send', 'pageview');
+		</script>
+		-->
+	</head>
+	<body>
+		<div id="mainContainer" style="background-color:white;width:900px;margin:20px auto;border:4px solid #efefef;">
+			<div class="container_12" id="topContent">
+	    	<div class="grid_4">
+	      	<h1>Moody Beach</h1>
+	        <h2>The Canonicus</h2>
+	    	</div>
+	    	<div class="grid_8" id="rightTopContent"></div>
+			</div>
+	    <div class="clear">&nbsp;</div>
+			<div class="container_12">
+				<div class="grid_4">
+        	      	<ul class="gallery">
+        			<li class="active"><img src="./images/1.jpg" title="View from the road" alt="1" /></li>
+        	          <li><img src="./images/2.jpg" title="Morning on the beach, high tide" alt="2" /></li>
+        	          <li><img src="./images/3.jpg" title="Eat-in kitchen with dishwasher" alt="3" /></li>
+        	          <li><img src="./images/4.jpg" title="View from the beach" alt="4" /></li>
+        	          <li><img src="./images/5.jpg" title="Ocean side master bedroom" alt="5" /></li>
+        	          <li><img src="./images/6.jpg" title="West downstairs bedroom" alt="6" /></li>
+        	          <li><img src="./images/7.jpg" title="West upstairs bedroom" alt="7" /></li>
+        	          <li><img src="./images/8.jpg" title="Living room" alt="8" /></li>
+        	          <li><img src="./images/9.jpg" title="Upstairs full bath" alt="9" /></li>
+        	          <li><img src="./images/10.jpg" title="Porch" alt="10" /></li>
+        	          <li><img src="./images/11.jpg" title="Porch" alt="11" /></li>
+        	          <li><img src="./images/12.jpg" title="Low tide" alt="12" /></li>
+        	          <li><img src="./images/13.jpg" title="Walkway" alt="13" /></li>
+        	          <li><img src="./images/14.jpg" title="Cubby storage" alt="14" /></li>
+        	          <li><img src="./images/15.jpg" title="Downstairs half bath" alt="15" /></li>
+        	           <!---
+        	          <li><img src="./images/16.jpg" title="" alt="16" /></li>
+        	          <li><img src="./images/17.jpg" title="" alt="17" /></li>
+        	          <li><img src="./images/18.jpg" title="" alt="18" /></li>
+        	          --->
+        			</ul>
+			    </div>
+			<div class="grid_8">
+			    <div id="main_image"></div>
+			</div>
+	    </div>
+	    <div class="clear">&nbsp;</div>
+	   	<div class="container_16" >
+	    	<div class="grid_2">
+					<p>&nbsp;</p>
+				</div>
+	      <div class="grid_12" id="galleryInformation" >
+			    <!--- edit below this line --->
+					<h2>Moody Beach Maine - The Canonicus</h2>
+	    		<p>The Canonicus is my summer oceanfront rental property located on Moody Beach (private beach), Wells, Maine.  It is a 3 bedroom, 1.5 bath house.  It is strategically located halfway between two of the few public ways on Moody, thus ensuring a private beach experience!</p>
+                <h2>Rental Information</h2>
+					<ul>
+						<li>Maximum of 6 occupants, including babies and children of all ages</li>
+						<li>No pets of any kind</li>
+						<li>Stove, microwave, refrigerator, and Keurig coffee machine</li>
+						<li>Clothes washer, dryer, and second refrigerator located in the basement</li>
+						<li>TV, telephone, and free high speed Internet/Wifi</li>
+						<li>Weber 3 burner outdoor gas grill</li>
+						<li>Guests are expected to leave the house as clean as they have found it</li>
+						<li>Check out is on Saturday at 10:00 am, check in is at 1:00 pm</li>
+					</ul>
+			        <p>If you have an electric vehicle (Tesla, Rivian, etc.) a NEMA 14-50 outdoor outlet is availble for your use!</p>		
+		            <p>Rental is available from June until October and is in week blocks, Saturday to Saturday.  Please contact me for availability and pricing.</p>
+                <h2>Directions</h2>
+					<p>The beach house is located at 333 Ocean Ave, Wells Maine 04090.  Click <a href="https://maps.google.com/maps?q=333+Ocean+Ave,+Wells+Maine&ie=UTF-8&hq=&hnear=0x89e2a8c2a3cd04e3:0xd130f8bf53feae59,333+Ocean+Ave,+Wells,+ME+04090&gl=us&daddr=333+Ocean+Ave,+Wells,+ME+04090&ei=t2VsUbCaJsXo0gHvwYDYBA&ved=0CDQQwwUwAA" target="new">here</a> for directions.</p>
+                
+                
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/u2G0sjUyt8A?si=QF0JKMHm9lXF3_hU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                
+                
+                <h2>Contact Information</h2>
+					<p>
+						Contact: Mandy Underwood/Jon Underwood<br />
+						Phone or Text: <a href="tel:16035122645">1-603-512-2645</a><br />
+						Email: <a href="mailto:amandaund@gmail.com">amandaund@gmail.com</a><br />
+					</p>
+					<!--- edit above this line --->
+					<div id="footer"><a href="http://www.bryantsmith.com">web designer florida</a></div>
+				</div>
+				<div class="grid_2"><p>&nbsp;</p></div>
+	    </div>
+	    <br style="clear:both;clear:all" />
+	  </div>
+	  <script>
+	  	$('#mainContainer').corner();
+	  	$('h1').dropShadow();
+	 	</script>
+	</body>
+</html>

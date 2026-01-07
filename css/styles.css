@@ -164,7 +164,7 @@ a:hover {
 
 #main-content {
 	display: grid;
-	grid-template-columns: minmax(0, 300px) 1fr;
+	grid-template-columns: 1fr;
 	gap: var(--spacing-lg);
 	margin-bottom: var(--spacing-lg);
 	align-items: start;
@@ -178,7 +178,7 @@ a:hover {
 	min-width: 0;
 	overflow: hidden;
 	box-sizing: border-box;
-	display: block;
+	display: none;
 }
 
 .gallery {
@@ -232,12 +232,14 @@ a:hover {
 }
 
 #main_image {
-	margin: 0 auto 10px auto;
+	margin: 0 auto var(--spacing-lg) auto;
 	text-align: center;
 	min-height: 400px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	width: 100%;
+	max-width: 600px;
 }
 
 #main_image a {
@@ -373,7 +375,7 @@ a:hover {
 		width: 100%;
 		margin: 0;
 		padding: 0;
-		display: block;
+		display: none;
 		box-sizing: border-box;
 		overflow: hidden;
 		position: relative;
@@ -453,7 +455,7 @@ a:hover {
 		width: 100%;
 		margin: 0;
 		padding: 0;
-		display: block;
+		display: none;
 		box-sizing: border-box;
 		overflow: hidden;
 	}

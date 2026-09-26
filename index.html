@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- dave.moodybeachmaine.com deploy-marker: beach-bot-verify-20260926-reggae -->
+<!-- dave.moodybeachmaine.com deploy-marker: beach-bot-verify-20260926-ne -->
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
@@ -26,7 +26,7 @@
 
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
 	<link rel="stylesheet" href="css/styles.css" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery.css" />
@@ -102,130 +102,89 @@
 <body>
 	<a class="skip-to-content" href="#main">Skip to main content</a>
 
-	<div class="sunset-wash" aria-hidden="true"></div>
-	<div class="wave-band" aria-hidden="true">
-		<svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-			<path class="wave wave-a" d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z"></path>
-			<path class="wave wave-b" d="M0,50 C240,10 480,70 720,50 C960,30 1200,70 1440,50 L1440,80 L0,80 Z"></path>
-		</svg>
-	</div>
-
 	<header class="site-header">
-		<div class="container reveal">
-			<p class="eyebrow">Moody Beach · Wells, Maine</p>
+		<div class="hero-photo" aria-hidden="true">
+			<img src="./images/4.jpg" alt="" width="1200" height="800" fetchpriority="high" />
+			<div class="hero-veil"></div>
+		</div>
+		<div class="container hero-copy reveal">
+			<p class="eyebrow">Private Moody Beach · Wells, Maine</p>
 			<h1>The Canonicus</h1>
-			<p class="tagline">Laid-back oceanfront weeks on a private stretch of Moody Beach</p>
+			<p class="tagline">A weathered New England beach house with stairs to the sand — soft mornings, salt air, and room for good times.</p>
 			<p class="facts-line">3 bedrooms · 1.5 baths · sleep 6 · weekly June–September</p>
 			<div class="header-ctas">
 				<a class="btn btn-primary" href="tel:+16035122645">Call or text</a>
 				<a class="btn btn-secondary" href="mailto:amandaund@gmail.com">Email</a>
-				<a class="btn btn-ghost" href="#story">Swipe the story</a>
+				<a class="btn btn-ghost" href="#gallery">See the house</a>
 			</div>
 		</div>
 	</header>
 
+	<section class="motif-strip" aria-label="Beach notes">
+		<div class="container motif-row">
+			<button type="button" class="motif-chip" data-motif="gull" aria-expanded="false">
+				<span class="motif-icon" aria-hidden="true"></span>
+				<span>Seagull soundtrack</span>
+			</button>
+			<button type="button" class="motif-chip" data-motif="chowder" aria-expanded="false">
+				<span class="motif-icon" aria-hidden="true"></span>
+				<span>Chowder weather</span>
+			</button>
+			<button type="button" class="motif-chip" data-motif="tide" aria-expanded="false">
+				<span class="motif-icon" aria-hidden="true"></span>
+				<span>Tide table days</span>
+			</button>
+		</div>
+		<p class="motif-note" id="motif-note" hidden></p>
+	</section>
+
 	<main id="main">
-		<section class="story-section" id="story" aria-labelledby="story-heading">
+		<section class="gallery-section" id="gallery" aria-labelledby="gallery-heading">
 			<div class="container">
 				<div class="section-intro reveal">
-					<h2 id="story-heading">Photo story</h2>
-					<p class="hint">Swipe or tap through · open any shot for the full gallery</p>
+					<h2 id="gallery-heading">Along the shore</h2>
+					<p class="hint">Owner photos of the house and private beach — tap any for the full gallery</p>
 				</div>
 
-				<div class="story-track" id="story-track" tabindex="0" role="region" aria-label="Swipeable photo story">
-					<article class="story-card" data-gallery-index="0">
-						<img src="./images/4.jpg" alt="View of The Canonicus from the beach — Adirondack chairs and sunroom facing the ocean" width="600" height="450" fetchpriority="high" loading="eager" />
-						<div class="story-caption">
-							<span class="story-num">01 / 15</span>
-							<strong>From the sand</strong>
-							<p>Adirondacks, sunroom, and the Atlantic right out front.</p>
-						</div>
-					</article>
-					<article class="story-card" data-gallery-index="1">
+				<div class="photo-mosaic reveal" id="photo-mosaic">
+					<figure class="mosaic-card mosaic-hero" data-gallery-index="0">
+						<img src="./images/4.jpg" alt="View of The Canonicus from the beach — Adirondack chairs and sunroom facing the ocean" width="800" height="600" fetchpriority="high" loading="eager" />
+						<figcaption>From the sand</figcaption>
+					</figure>
+					<figure class="mosaic-card" data-gallery-index="1">
 						<img src="./images/2.jpg" alt="Morning beach at high tide with Adirondack chairs" width="600" height="450" loading="lazy" />
-						<div class="story-caption">
-							<span class="story-num">02 / 15</span>
-							<strong>High tide mornings</strong>
-							<p>Quiet water, soft light, chairs waiting.</p>
-						</div>
-					</article>
-					<article class="story-card" data-gallery-index="2">
+						<figcaption>High tide mornings</figcaption>
+					</figure>
+					<figure class="mosaic-card" data-gallery-index="2">
 						<img src="./images/1.jpg" alt="Street side of The Canonicus with blue Canonicus sign" width="600" height="450" loading="lazy" />
-						<div class="story-caption">
-							<span class="story-num">03 / 15</span>
-							<strong>Street side</strong>
-							<p>Look for the blue Canonicus sign on Ocean Ave.</p>
-						</div>
-					</article>
-					<article class="story-card" data-gallery-index="3">
+						<figcaption>Street side</figcaption>
+					</figure>
+					<figure class="mosaic-card" data-gallery-index="3">
 						<img src="./images/5.jpg" alt="Ocean-side master bedroom" width="600" height="450" loading="lazy" />
-						<div class="story-caption">
-							<span class="story-num">04 / 15</span>
-							<strong>Ocean-side master</strong>
-							<p>Wake up to the sound of the surf.</p>
-						</div>
-					</article>
-					<article class="story-card" data-gallery-index="4">
+						<figcaption>Ocean-side master</figcaption>
+					</figure>
+					<figure class="mosaic-card" data-gallery-index="4">
 						<img src="./images/8.jpg" alt="Living room" width="600" height="450" loading="lazy" />
-						<div class="story-caption">
-							<span class="story-num">05 / 15</span>
-							<strong>Living room</strong>
-							<p>Settle in after a day on the beach.</p>
-						</div>
-					</article>
-					<article class="story-card" data-gallery-index="5">
+						<figcaption>Living room</figcaption>
+					</figure>
+					<figure class="mosaic-card" data-gallery-index="5">
 						<img src="./images/3.jpg" alt="Eat-in kitchen" width="600" height="450" loading="lazy" />
-						<div class="story-caption">
-							<span class="story-num">06 / 15</span>
-							<strong>Eat-in kitchen</strong>
-							<p>Cook, chat, linger over breakfast.</p>
-						</div>
-					</article>
-					<article class="story-card" data-gallery-index="6">
+						<figcaption>Eat-in kitchen</figcaption>
+					</figure>
+					<figure class="mosaic-card" data-gallery-index="6">
 						<img src="./images/13.jpg" alt="Walkway to the beach" width="600" height="450" loading="lazy" />
-						<div class="story-caption">
-							<span class="story-num">07 / 15</span>
-							<strong>Walkway to the beach</strong>
-							<p>Direct stairs and a short path to the sand.</p>
-						</div>
-					</article>
-					<article class="story-card" data-gallery-index="7">
+						<figcaption>Walkway to the beach</figcaption>
+					</figure>
+					<figure class="mosaic-card" data-gallery-index="7">
 						<img src="./images/11.jpg" alt="Quiet evenings with a spectacular ocean view" width="600" height="450" loading="lazy" />
-						<div class="story-caption">
-							<span class="story-num">08 / 15</span>
-							<strong>Golden evenings</strong>
-							<p>Quiet light and a wide ocean horizon.</p>
-						</div>
-					</article>
-					<article class="story-card" data-gallery-index="8">
-						<img src="./images/10.jpg" alt="Outdoor porch" width="600" height="450" loading="lazy" />
-						<div class="story-caption">
-							<span class="story-num">09 / 15</span>
-							<strong>Outdoor porch</strong>
-							<p>Shade, breeze, and a Weber grill nearby.</p>
-						</div>
-					</article>
-					<article class="story-card" data-gallery-index="9">
-						<img src="./images/12.jpg" alt="Beach at low tide" width="600" height="450" loading="lazy" />
-						<div class="story-caption">
-							<span class="story-num">10 / 15</span>
-							<strong>Low tide stretch</strong>
-							<p>Wide sand for long walks and tide pools.</p>
-						</div>
-					</article>
+						<figcaption>Golden evenings</figcaption>
+					</figure>
 				</div>
 
-				<div class="story-nav reveal" aria-hidden="true">
-					<button type="button" class="story-nav-btn" id="story-prev" aria-label="Previous photo">‹</button>
-					<div class="story-dots" id="story-dots"></div>
-					<button type="button" class="story-nav-btn" id="story-next" aria-label="Next photo">›</button>
-				</div>
-
-				<p class="story-cta reveal">
+				<p class="gallery-cta reveal">
 					<button type="button" class="btn btn-ghost" id="open-full-gallery">Open all 15 photos</button>
 				</p>
 
-				<!-- Hidden lightGallery sources — all 15 photos -->
 				<ul id="lightgallery" class="gallery-sources" aria-hidden="true">
 					<li><a href="./images/4.jpg" data-sub-html="View of The Canonicus from the beach"><img src="./images/4.jpg" alt="" width="1" height="1" /></a></li>
 					<li><a href="./images/2.jpg" data-sub-html="Morning beach at high tide with Adirondack chairs"><img src="./images/2.jpg" alt="" width="1" height="1" /></a></li>
@@ -247,79 +206,55 @@
 		</section>
 
 		<section id="about" aria-labelledby="about-heading">
-			<div class="container prose reveal">
-				<h2 id="about-heading">The house</h2>
-				<p>The Canonicus is our summer oceanfront rental on Moody Beach (a private beach) in Wells, Maine. This 3 bedroom, 1.5 bath house sits halfway between two of the few public ways on Moody, so you get a quieter private-beach stretch with direct stairs to the sand.</p>
-				<p><strong>Canonicus</strong> (pronounced kuh-NON-ih-kus) is named after a Narragansett sachem (chief) who was a prominent leader in the early 17th century and maintained peaceful relations with English settlers in the region.</p>
+			<div class="about-split container">
+				<div class="about-photo reveal">
+					<img src="./images/ne-driftwood.jpg" alt="Soft light on a New England shoreline" width="1200" height="777" loading="lazy" />
+				</div>
+				<div class="prose reveal">
+					<h2 id="about-heading">The house</h2>
+					<p>The Canonicus is our summer oceanfront rental on Moody Beach (a private beach) in Wells, Maine. This 3 bedroom, 1.5 bath house sits halfway between two of the few public ways on Moody, so you get a quieter private-beach stretch with direct stairs to the sand.</p>
+					<p><strong>Canonicus</strong> (pronounced kuh-NON-ih-kus) is named after a Narragansett sachem (chief) who was a prominent leader in the early 17th century and maintained peaceful relations with English settlers in the region.</p>
+					<p class="soft-aside">Bring a sweater for the porch breeze. Leave room for lobster rolls, a bowl of chowder, and evenings when the gulls have the last word.</p>
+				</div>
 			</div>
 		</section>
 
 		<section id="amenities" aria-labelledby="amenities-heading">
 			<div class="container">
 				<div class="section-intro reveal">
-					<h2 id="amenities-heading">Amenities</h2>
-					<p class="hint">Tap or hover a card to reveal the details</p>
+					<h2 id="amenities-heading">What you’ll find</h2>
+					<p class="hint">Comfortable essentials for an easy beach week</p>
 				</div>
 				<ul class="amenity-grid">
-					<li class="amenity-flip reveal">
-						<button type="button" class="amenity-face" aria-expanded="false">
-							<span class="amenity-icon" aria-hidden="true">🍳</span>
-							<strong>Full kitchen</strong>
-							<span class="amenity-tap">tap for more</span>
-						</button>
-						<div class="amenity-back">
-							<p>Stove, microwave, fridge, and Keurig — ready for easy beach-week meals.</p>
-						</div>
+					<li class="amenity-card reveal">
+						<span class="amenity-mark" aria-hidden="true"></span>
+						<strong>Full kitchen</strong>
+						<p>Stove, microwave, fridge, and Keurig — ready for easy beach-week meals.</p>
 					</li>
-					<li class="amenity-flip reveal">
-						<button type="button" class="amenity-face" aria-expanded="false">
-							<span class="amenity-icon" aria-hidden="true">🧺</span>
-							<strong>Laundry &amp; extra fridge</strong>
-							<span class="amenity-tap">tap for more</span>
-						</button>
-						<div class="amenity-back">
-							<p>Washer/dryer and a second fridge in the basement.</p>
-						</div>
+					<li class="amenity-card reveal">
+						<span class="amenity-mark" aria-hidden="true"></span>
+						<strong>Laundry &amp; extra fridge</strong>
+						<p>Washer/dryer and a second fridge in the basement.</p>
 					</li>
-					<li class="amenity-flip reveal">
-						<button type="button" class="amenity-face" aria-expanded="false">
-							<span class="amenity-icon" aria-hidden="true">📶</span>
-							<strong>Streaming &amp; Wi‑Fi</strong>
-							<span class="amenity-tap">tap for more</span>
-						</button>
-						<div class="amenity-back">
-							<p>Roku / streaming TV and free high-speed Wi‑Fi.</p>
-						</div>
+					<li class="amenity-card reveal">
+						<span class="amenity-mark" aria-hidden="true"></span>
+						<strong>Streaming &amp; Wi‑Fi</strong>
+						<p>Roku / streaming TV and free high-speed Wi‑Fi.</p>
 					</li>
-					<li class="amenity-flip reveal">
-						<button type="button" class="amenity-face" aria-expanded="false">
-							<span class="amenity-icon" aria-hidden="true">🔥</span>
-							<strong>Outdoor living</strong>
-							<span class="amenity-tap">tap for more</span>
-						</button>
-						<div class="amenity-back">
-							<p>Weber 3-burner gas grill, porch, and Adirondacks on the sand.</p>
-						</div>
+					<li class="amenity-card reveal">
+						<span class="amenity-mark" aria-hidden="true"></span>
+						<strong>Outdoor living</strong>
+						<p>Weber 3-burner gas grill, porch, and Adirondacks on the sand.</p>
 					</li>
-					<li class="amenity-flip reveal">
-						<button type="button" class="amenity-face" aria-expanded="false">
-							<span class="amenity-icon" aria-hidden="true">⚡</span>
-							<strong>EV charging</strong>
-							<span class="amenity-tap">tap for more</span>
-						</button>
-						<div class="amenity-back">
-							<p>NEMA 14-50 outdoor outlet (Tesla, Rivian, and more).</p>
-						</div>
+					<li class="amenity-card reveal">
+						<span class="amenity-mark" aria-hidden="true"></span>
+						<strong>EV charging</strong>
+						<p>NEMA 14-50 outdoor outlet (Tesla, Rivian, and more).</p>
 					</li>
-					<li class="amenity-flip reveal">
-						<button type="button" class="amenity-face" aria-expanded="false">
-							<span class="amenity-icon" aria-hidden="true">🌊</span>
-							<strong>Private beach access</strong>
-							<span class="amenity-tap">tap for more</span>
-						</button>
-						<div class="amenity-back">
-							<p>Direct stairs and walkway straight to Moody Beach sand.</p>
-						</div>
+					<li class="amenity-card reveal">
+						<span class="amenity-mark" aria-hidden="true"></span>
+						<strong>Private beach access</strong>
+						<p>Direct stairs and walkway straight to Moody Beach sand.</p>
 					</li>
 				</ul>
 			</div>
@@ -399,7 +334,7 @@
 			var gallery = lightGallery(galleryEl, {
 				selector: 'a',
 				plugins: [lgThumbnail],
-				speed: 500,
+				speed: 400,
 				thumbnail: true,
 				animateThumb: true,
 				showThumbByDefault: true
@@ -414,73 +349,38 @@
 				openGalleryAt(0);
 			});
 
-			/* Swipeable photo story */
-			var track = document.getElementById('story-track');
-			var cards = Array.prototype.slice.call(track.querySelectorAll('.story-card'));
-			var dotsWrap = document.getElementById('story-dots');
-			var prevBtn = document.getElementById('story-prev');
-			var nextBtn = document.getElementById('story-next');
-			var active = 0;
-
-			cards.forEach(function (card, i) {
-				var dot = document.createElement('button');
-				dot.type = 'button';
-				dot.className = 'story-dot' + (i === 0 ? ' is-active' : '');
-				dot.setAttribute('aria-label', 'Go to photo ' + (i + 1));
-				dot.addEventListener('click', function () { scrollToCard(i); });
-				dotsWrap.appendChild(dot);
-
+			document.querySelectorAll('#photo-mosaic .mosaic-card').forEach(function (card) {
+				card.style.cursor = 'pointer';
 				card.addEventListener('click', function () {
 					var idx = parseInt(card.getAttribute('data-gallery-index'), 10);
 					openGalleryAt(idx);
 				});
-				card.style.cursor = 'pointer';
 			});
 
-			function scrollToCard(i) {
-				i = Math.max(0, Math.min(cards.length - 1, i));
-				cards[i].scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
-				setActive(i);
-			}
-
-			function setActive(i) {
-				active = i;
-				var dots = dotsWrap.querySelectorAll('.story-dot');
-				dots.forEach(function (d, di) {
-					d.classList.toggle('is-active', di === i);
-				});
-			}
-
-			prevBtn.addEventListener('click', function () { scrollToCard(active - 1); });
-			nextBtn.addEventListener('click', function () { scrollToCard(active + 1); });
-
-			var scrollTimer;
-			track.addEventListener('scroll', function () {
-				clearTimeout(scrollTimer);
-				scrollTimer = setTimeout(function () {
-					var mid = track.scrollLeft + track.clientWidth / 2;
-					var best = 0;
-					var bestDist = Infinity;
-					cards.forEach(function (card, i) {
-						var center = card.offsetLeft + card.offsetWidth / 2;
-						var dist = Math.abs(center - mid);
-						if (dist < bestDist) { bestDist = dist; best = i; }
+			/* Soft motif notes */
+			var notes = {
+				gull: "Moody Beach mornings come with a seagull chorus — friendly company while coffee cools on the porch.",
+				chowder: "Foggy afternoons call for clam chowder in Wells. The kitchen is ready; the porch is waiting.",
+				tide: "Low tide stretches the sand wide for long walks. High tide brings the ocean right to the Adirondacks."
+			};
+			var noteEl = document.getElementById('motif-note');
+			document.querySelectorAll('.motif-chip').forEach(function (chip) {
+				chip.addEventListener('click', function () {
+					var key = chip.getAttribute('data-motif');
+					var open = chip.getAttribute('aria-expanded') === 'true';
+					document.querySelectorAll('.motif-chip').forEach(function (c) {
+						c.setAttribute('aria-expanded', 'false');
+						c.classList.remove('is-active');
 					});
-					setActive(best);
-				}, 60);
-			}, { passive: true });
-
-			track.addEventListener('keydown', function (e) {
-				if (e.key === 'ArrowRight') { e.preventDefault(); scrollToCard(active + 1); }
-				if (e.key === 'ArrowLeft') { e.preventDefault(); scrollToCard(active - 1); }
-			});
-
-			/* Amenity flip cards */
-			document.querySelectorAll('.amenity-flip').forEach(function (card) {
-				var btn = card.querySelector('.amenity-face');
-				btn.addEventListener('click', function () {
-					var open = card.classList.toggle('is-flipped');
-					btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+					if (open) {
+						noteEl.hidden = true;
+						noteEl.textContent = '';
+					} else {
+						chip.setAttribute('aria-expanded', 'true');
+						chip.classList.add('is-active');
+						noteEl.hidden = false;
+						noteEl.textContent = notes[key] || '';
+					}
 				});
 			});
 
@@ -497,7 +397,7 @@
 				});
 			}
 
-			/* Scroll reveals */
+			/* Gentle scroll reveals */
 			if ('IntersectionObserver' in window) {
 				var io = new IntersectionObserver(function (entries) {
 					entries.forEach(function (entry) {
@@ -506,7 +406,7 @@
 							io.unobserve(entry.target);
 						}
 					});
-				}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+				}, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
 				document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
 			} else {
 				document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-visible'); });
